@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Consulta</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('as.jpg'); /* Ruta de la imagen de fondo */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejorar la legibilidad */
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #2b6337;
+      color: white;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 22px);
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #302b63;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #44407a;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #888;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4" style="text-align: center;">Consulta de Usuario por Documento</th>
+        </tr>
+      </thead>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Documento</th>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+
+    <form id="form">
+      <input type="text" placeholder="Documento" id="Document" />
+      <button type="button" id="consultar">Consultar</button>
+      <a href="menuo.html">Volver al Menú Principal</a>
+    </form>
+
+  </div>
+  <script src="./procesoR.js"></script>
+
+</body>
+
+
+</html>

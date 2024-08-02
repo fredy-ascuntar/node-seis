@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3; /* Cambio de color de fondo */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff; /* Cambio de color de fondo del contenedor */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+      padding: 20px;
+      width: 80%;
+      max-width: 600px; /* Limitar el ancho máximo */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd; /* Línea de separación entre filas */
+    }
+
+    th {
+      background-color: #00b409;
+      color: white;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 22px);
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #302b63;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #44407a; /* Cambio de color al pasar el ratón */
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #888;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #555; /* Cambio de color al pasar el ratón */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Micro mercado San Francico</h1>
+    <h2>Registro clientes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Documento</th>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+
+    <form id="form">
+      <input type="text" placeholder="Documento" id="doc" />
+      <input type="text" placeholder="Nombre" id="name" />
+      <input type="text" placeholder="Dirección" id="dir" />
+      <input type="text" placeholder="Teléfono" id="tel" />
+
+      <button type="button" id="limpiar">Limpiar</button>
+      <button type="submit" id="crear">Crear</button>
+    </form>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function(){
+         let formulario = document.getElementById('form');
+         formulario.addEventListener('submit', function() {
+           formulario.reset();
+           alert("sss")
+         });
+       });
+       const limpiarBtn = document.getElementById('limpiar');
+  limpiarBtn.addEventListener('click', function() {
+    form.reset();
+  });
+
+
+
+    </script>
+    <a href="menuo.html">Volver al Menú Principal</a>  
+  </div>
+
+  <script src="./procesoC.js">
+
+  </script>
+
+</body>
+
+</html>

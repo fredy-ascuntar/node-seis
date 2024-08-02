@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micromercado San Francisco</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('im.png'); /* Ajusta el nombre de la imagen y asegúrate de que el archivo se encuentre en la misma carpeta que este CSS */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Color del texto */
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambio de color al pasar el ratón */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Micromercado San Francisco</h1>
+        <h2>Modulos</h2>
+    </header>
+    <div class="container">
+        <button onclick=window.location.href='menuo.html'>Clientes</button>
+        <button onclick="alert('proximamente')">Productos</button>
+        <button onclick=window.location.href='index.html'>Salir</button>
+    </div>
+</body>
+</html>

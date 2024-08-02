@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Consulta</title>
+
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      background-image: url('as.jpg');
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #dee2e6;
+    }
+
+    th {
+      background-color: #1eff00;
+      color: #ffffff;
+    }
+
+    input[type="text"],
+    button {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    input[type="text"]:focus,
+    button:focus {
+      outline: none;
+      border-color: #80bdff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    button {
+      background-color: #007bff;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #007bff;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <h1>Micromercado San Francisco</h1>
+        <tr>
+          <th>Consultar usuario por Documento para Modificar</th>
+        </tr>
+      </thead>
+    </table>
+    <table class="table table-bordered table-striped">
+      
+      <thead>
+        <tr>
+          <th>Documento</th>
+          <th>Nombre</th>
+          <th>Direccion</th>
+          <th>Telefono</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+
+    <form id="form1">
+      <input placeholder="Documento" id="Document" />
+      <button id="modificar1">Consultar</button>
+    </form>
+    <br> <br> <br>
+    <form id="form2">
+        <input placeholder="Documento" id="doc" />
+        <input placeholder="Nombre" id="name" />
+        <input placeholder="Direccion" id="dir" />
+        <input placeholder="Telefono" id="tel" />
+        <button id="modificar2">Cambiar Datos</button>
+      </form>
+
+  </div>
+  <script src="./procesoU.js">
+
+  </script>
+
+<a href="menuo.html">Volver al Menu Principal</a> <br> <br>
+
+</body>
+
+</html>
