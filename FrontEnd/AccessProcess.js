@@ -1,5 +1,5 @@
 //let url = 'http://localhost:4077/';
-let url = "https://node-cuatro.onrender.com/";
+let url = "https://node-seis.onrender.com/";
 
 //Envia los datos para permitir acceso
 const comprobar = () => {
